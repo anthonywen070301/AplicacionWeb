@@ -11,8 +11,9 @@ else
     if($cantidad>100){
         $descuento=$subtotal*0.05;
     }
-    else
+    else{
         $descuento=0;
+    }
 }
 $total=$subtotal+$flete-$descuento;
 echo "El precio total a pagar es: ".$total."<br>";
